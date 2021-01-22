@@ -3,6 +3,7 @@ import React from "react";
 import Person from "./Person/Person";
 
 const persons = (props) => {
+  return (
   props.persons.map((person, index) => {
     return (
       <Person
@@ -13,7 +14,6 @@ const persons = (props) => {
         changed={(event) => props.chaned(event, person.id)}
       />
     );
-  });
-};
+  }))};
 
 export default persons;

@@ -73,11 +73,7 @@ class App extends Component {
     if (this.state.persons.length <= 1) {
       assignedClasses.push(classes.bold);
     }
-    /*
-    const sytle = {
-      backgroundColor: 'red',
-    }
-    */
+
     return (
       <div className={classes.App}>
         <h1>Hi, I'm a React App</h1>
